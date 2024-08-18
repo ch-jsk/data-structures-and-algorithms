@@ -1,0 +1,193 @@
+#case1
+class Stack {
+static final int MAX = 12;
+int top;
+int a[] = new int[MAX];
+boolean isEmpty()
+{
+return (top &lt; 0);
+}
+Stack()
+{
+top = -1;
+}
+boolean push(int x)
+{
+if (top &gt;= (MAX - 1)) {
+System.out.println(&quot;Stack Overflow&quot;);
+return false;
+}
+else {
+a[++top] = x;
+System.out.println(x + &quot; pushed into stack&quot;);
+return true;
+}
+}
+int pop()
+{
+if (top &lt; 0) {
+System.out.println(&quot;Stack Underflow&quot;);
+return 0;
+}
+else {
+int x = a[top--];
+return x;
+}
+}
+int peek()
+{
+if (top &lt; 0) {
+System.out.println(&quot;Stack Underflow&quot;);
+return 0;
+}
+else {
+int x = a[top];
+return x;
+}
+}
+void print(){
+for(int i = top;i&gt;-1;i--){
+System.out.print(&quot; &quot;+ a[i]);
+}
+}
+}
+class main {
+public static void main(String args[])
+{
+Stack s = new Stack();
+s.push(11);
+s.push(22);
+s.push(33);
+System.out.println(s.pop() + &quot; Popped from stack&quot;);
+System.out.println(&quot;Top element is :&quot; + s.peek());
+System.out.print(&quot;Elements present in stack :&quot;);
+s.print();
+}
+}
+
+#case 2
+class Stack {
+static final int MAX = 2;
+int top;
+int a[] = new int[MAX];
+boolean isEmpty()
+{
+return (top &lt; 0);
+}
+Stack()
+{
+top = -1;
+}
+boolean push(int x)
+{
+if (top &gt;= (MAX - 1)) {
+System.out.println(&quot;Stack Overflow&quot;);
+return false;
+}
+else {
+a[++top] = x;
+System.out.println(x + &quot; pushed into stack&quot;);
+return true;
+}
+}
+int pop()
+{
+if (top &lt; 0) {
+System.out.println(&quot;Stack Underflow&quot;);
+return 0;}
+else {
+int x = a[top--];
+return x;
+}
+}
+int peek()
+{
+if (top &lt; 0) {
+System.out.println(&quot;Stack Underflow&quot;);
+return 0;
+}
+else {
+int x = a[top];
+return x;
+}
+}
+void print(){
+for(int i = top;i&gt;-1;i--){
+System.out.print(&quot; &quot;+ a[i]);
+}
+}
+}
+class main {
+public static void main(String args[])
+{
+Stack s = new Stack();
+s.push(11);
+s.push(22);
+System.out.println(s.pop() + &quot; Popped from stack&quot;);
+System.out.println(&quot;Top element is :&quot; + s.peek());
+System.out.print(&quot;Elements present in stack :&quot;);
+s.print();
+}}
+
+#case3
+class Stack {
+static final int MAX = 2;
+int top;
+int a[] = new int[MAX];
+boolean isEmpty()
+{
+return (top &lt; 0);
+}
+Stack()
+{
+top = -1;
+}
+boolean push(int x)
+{
+if (top &gt;= (MAX - 1)) {
+System.out.println(&quot;Stack Overflow&quot;);
+return false;
+}
+else {
+a[++top] = x;
+System.out.println(x + &quot; pushed into stack&quot;);
+return true;
+}
+}
+int pop()
+{
+if (top &lt; 0) {
+System.out.println(&quot;Stack Underflow&quot;);
+return 0;
+}
+else {
+int x = a[top--];
+return x;
+}
+}
+int peek()
+{
+if (top &lt; 0) {
+System.out.println(&quot;Stack Underflow&quot;);
+return 0;
+}
+else {
+int x = a[top];
+return x;
+}
+}
+void print(){
+for(int i = top;i&gt;-1;i--){
+System.out.print(&quot; &quot;+ a[i]);
+}
+}
+}
+class main {
+public static void main(String args[])
+{
+Stack s = new Stack();
+System.out.println(s.pop() + &quot; Popped from stack&quot;);
+System.out.println(&quot;Top element is :&quot; + s.peek());
+System.out.print(&quot;Elements present in stack :&quot;);
+s.print();
+}}
