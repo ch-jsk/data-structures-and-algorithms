@@ -1,0 +1,14 @@
+import java.util.Arrays;
+public class Swap
+{
+public static void main(String[] args)
+{
+int[] i = {10, 20, 30};
+System.out.println("Original Array: "+Arrays.toString(i));
+int x = i[0];
+i[0] = i[i.length-1];
+i[i.length-1] = x;
+System.out.println("New array after swaping the first and last
+elements: "+Arrays.toString(i));
+}
+}
